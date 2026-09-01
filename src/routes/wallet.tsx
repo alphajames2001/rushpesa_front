@@ -313,7 +313,7 @@ function WithdrawForm({
     const res = await walletApi.withdraw(amt, `254${phone}`);
     setLoading(false);
     if (!res.ok) return setError(res.error);
-    toast.success(`Withdrawal of KES ${formatKES(amt)} sent to M-Pesa`);
+    toast.success("Request has been received, withdrawals will be processed within 24-48 hours");
   }
 
   return (
